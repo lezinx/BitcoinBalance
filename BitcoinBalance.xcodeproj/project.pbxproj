@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		156ACD032211E77700460713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD022211E77700460713 /* AppDelegate.swift */; };
+		156ACD052211E77700460713 /* WalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD042211E77700460713 /* WalletController.swift */; };
+		156ACD0D2211E77900460713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156ACD0B2211E77900460713 /* LaunchScreen.storyboard */; };
+		156ACD1B2211FFE800460713 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD1A2211FFE800460713 /* MainView.swift */; };
+		156ACD1E22121E4000460713 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD1D22121E4000460713 /* WalletModel.swift */; };
+		156ACD21221223BC00460713 /* WalletVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD20221223BC00460713 /* WalletVIewModel.swift */; };
+		156ACD23221282B400460713 /* ValidateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD22221282B400460713 /* ValidateViewModel.swift */; };
+		E6D0E67D7A23B485DE997FC4 /* Pods_BitcoinBalance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C3C6D9115A594A1E7AFC52 /* Pods_BitcoinBalance.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		156ACCFF2211E77700460713 /* BitcoinBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		156ACD022211E77700460713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		156ACD042211E77700460713 /* WalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletController.swift; sourceTree = "<group>"; };
+		156ACD0C2211E77900460713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		156ACD0E2211E77900460713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156ACD1A2211FFE800460713 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		156ACD1D22121E4000460713 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
+		156ACD20221223BC00460713 /* WalletVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVIewModel.swift; sourceTree = "<group>"; };
+		156ACD22221282B400460713 /* ValidateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateViewModel.swift; sourceTree = "<group>"; };
+		45BCDDCAA72C9DF00A059F58 /* Pods-BitcoinBalance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBalance.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinBalance/Pods-BitcoinBalance.debug.xcconfig"; sourceTree = "<group>"; };
+		D24CB2B0FCB165725B0ABBED /* Pods-BitcoinBalance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBalance.release.xcconfig"; path = "Target Support Files/Pods-BitcoinBalance/Pods-BitcoinBalance.release.xcconfig"; sourceTree = "<group>"; };
+		F3C3C6D9115A594A1E7AFC52 /* Pods_BitcoinBalance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinBalance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		156ACCFC2211E77700460713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D0E67D7A23B485DE997FC4 /* Pods_BitcoinBalance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		156ACCF62211E77700460713 = {
+			isa = PBXGroup;
+			children = (
+				156ACD012211E77700460713 /* BitcoinBalance */,
+				156ACD002211E77700460713 /* Products */,
+				3E91441AA4171E880773D809 /* Pods */,
+				E28A3B14C1A4914A963A492B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		156ACD002211E77700460713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				156ACCFF2211E77700460713 /* BitcoinBalance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		156ACD012211E77700460713 /* BitcoinBalance */ = {
+			isa = PBXGroup;
+			children = (
+				156ACD1F2212233F00460713 /* ViewModels */,
+				156ACD1C22121DD000460713 /* Model */,
+				156ACD192211EAB000460713 /* Controllers */,
+				156ACD142211E78600460713 /* View */,
+				156ACD022211E77700460713 /* AppDelegate.swift */,
+				156ACD0B2211E77900460713 /* LaunchScreen.storyboard */,
+				156ACD0E2211E77900460713 /* Info.plist */,
+			);
+			path = BitcoinBalance;
+			sourceTree = "<group>";
+		};
+		156ACD142211E78600460713 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				156ACD1A2211FFE800460713 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		156ACD192211EAB000460713 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				156ACD042211E77700460713 /* WalletController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		156ACD1C22121DD000460713 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				156ACD1D22121E4000460713 /* WalletModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		156ACD1F2212233F00460713 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				156ACD20221223BC00460713 /* WalletVIewModel.swift */,
+				156ACD22221282B400460713 /* ValidateViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3E91441AA4171E880773D809 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45BCDDCAA72C9DF00A059F58 /* Pods-BitcoinBalance.debug.xcconfig */,
+				D24CB2B0FCB165725B0ABBED /* Pods-BitcoinBalance.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E28A3B14C1A4914A963A492B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3C3C6D9115A594A1E7AFC52 /* Pods_BitcoinBalance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		156ACCFE2211E77700460713 /* BitcoinBalance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156ACD112211E77900460713 /* Build configuration list for PBXNativeTarget "BitcoinBalance" */;
+			buildPhases = (
+				4529048203B843B3C705486B /* [CP] Check Pods Manifest.lock */,
+				156ACCFB2211E77700460713 /* Sources */,
+				156ACCFC2211E77700460713 /* Frameworks */,
+				156ACCFD2211E77700460713 /* Resources */,
+				749E205C9DB1F558E910D4E8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitcoinBalance;
+			productName = BitcoinBalance;
+			productReference = 156ACCFF2211E77700460713 /* BitcoinBalance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		156ACCF72211E77700460713 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Ziong;
+				TargetAttributes = {
+					156ACCFE2211E77700460713 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 156ACCFA2211E77700460713 /* Build configuration list for PBXProject "BitcoinBalance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 156ACCF62211E77700460713;
+			productRefGroup = 156ACD002211E77700460713 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				156ACCFE2211E77700460713 /* BitcoinBalance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		156ACCFD2211E77700460713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156ACD0D2211E77900460713 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4529048203B843B3C705486B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinBalance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		749E205C9DB1F558E910D4E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitcoinBalance/Pods-BitcoinBalance-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitcoinBalance/Pods-BitcoinBalance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		156ACCFB2211E77700460713 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156ACD1E22121E4000460713 /* WalletModel.swift in Sources */,
+				156ACD1B2211FFE800460713 /* MainView.swift in Sources */,
+				156ACD052211E77700460713 /* WalletController.swift in Sources */,
+				156ACD032211E77700460713 /* AppDelegate.swift in Sources */,
+				156ACD23221282B400460713 /* ValidateViewModel.swift in Sources */,
+				156ACD21221223BC00460713 /* WalletVIewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		156ACD0B2211E77900460713 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				156ACD0C2211E77900460713 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		156ACD0F2211E77900460713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		156ACD102211E77900460713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		156ACD122211E77900460713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45BCDDCAA72C9DF00A059F58 /* Pods-BitcoinBalance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YJUGMUZ7F;
+				INFOPLIST_FILE = BitcoinBalance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zinx.BitcoinBalance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		156ACD132211E77900460713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24CB2B0FCB165725B0ABBED /* Pods-BitcoinBalance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YJUGMUZ7F;
+				INFOPLIST_FILE = BitcoinBalance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zinx.BitcoinBalance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		156ACCFA2211E77700460713 /* Build configuration list for PBXProject "BitcoinBalance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156ACD0F2211E77900460713 /* Debug */,
+				156ACD102211E77900460713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156ACD112211E77900460713 /* Build configuration list for PBXNativeTarget "BitcoinBalance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156ACD122211E77900460713 /* Debug */,
+				156ACD132211E77900460713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 156ACCF72211E77700460713 /* Project object */;
+}

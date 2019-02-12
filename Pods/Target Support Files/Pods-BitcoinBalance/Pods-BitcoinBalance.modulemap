@@ -1,0 +1,6 @@
+framework module Pods_BitcoinBalance {
+  umbrella header "Pods-BitcoinBalance-umbrella.h"
+
+  export *
+  module * { export * }
+}
