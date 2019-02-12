@@ -14,13 +14,14 @@ class MainView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .white
+      
         setupViews()
         setupConstraints()
         
     }
     
     func setupViews() {
+        self.backgroundColor = .white
         self.addSubview(addressTextField)
         self.addSubview(checkBalanceButton)
     }

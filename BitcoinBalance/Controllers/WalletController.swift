@@ -29,7 +29,8 @@ class WalletController: UIViewController {
             .bind(to: viewModel.address)
             .disposed(by: disposeBag)
         
-        mainView.checkBalanceButton.rx.tap.subscribe(onNext:{ [unowned self] _ in
+        mainView.checkBalanceButton.rx.tap
+            .subscribe(onNext:{ [unowned self] _ in
             if self.viewModel.validateWallet() {
                 self.viewModel.fetchWallet(completion: { (response: DataResponse<WalletModel>) in
                     guard response.result.isSuccess else {
@@ -49,7 +50,7 @@ class WalletController: UIViewController {
     }
     
     func showAlertForTitle(title: String) {
-        let alert = UIAlertController(title: title, message: nil, preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "BTC", message: title, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.view.endEditing(true)
         self.present(alert, animated: true, completion: nil)
