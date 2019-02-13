@@ -11,44 +11,49 @@ import Alamofire
 import RxCocoa
 import RxSwift
 
-class WalletController: UIViewController {
 
-    let viewModel = WalletViewModel()
+
+
+class WalletController: UIViewController {
+    
+    
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var checkBalanceButton: UIButton!
+    var viewModel = WalletViewModel()
     let disposeBag = DisposeBag()
-    let mainView = MainView(frame: UIScreen.main.bounds)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view = mainView
         viewModelBinding()
     }
     
-    
     func viewModelBinding() {
-        mainView.addressTextField.rx.text.orEmpty
+        
+        addressTextField.rx.text.orEmpty
             .bind(to: viewModel.address)
             .disposed(by: disposeBag)
         
-        mainView.checkBalanceButton.rx.tap
-            .subscribe(onNext:{ [unowned self] _ in
-            if self.viewModel.validateWallet() {
-                self.viewModel.fetchWallet(completion: { (response: DataResponse<WalletModel>) in
-                    guard response.result.isSuccess else {
-                        self.showAlertForTitle(title: self.viewModel.errorMessage.value)
-                        return
-                    }
-                    self.viewModel.wallet.accept(response.value)
-                    if let wallet = self.viewModel.wallet.value {
-                        self.showAlertForTitle(title: "Balance: \(wallet.balance)\nTotal Received: \(wallet.totalReceived)\nTotal Sent: \(wallet.totalSent)")
-                    }
-                })
-            } else {
-                self.showAlertForTitle(title: self.viewModel.errorMessage.value)
+        checkBalanceButton.rx.tap.subscribe { _ in
+            _ = self.viewModel.validateWallet()
+            }.disposed(by: disposeBag)
+        
+        _ = viewModel.isSuccess.asObservable().subscribe{ _ in
+            if self.viewModel.isSuccess.value == false {
+                 self.showAlertForTitle(title: self.viewModel.errorMessage.value)
             }
-        }).disposed(by: disposeBag)
+        }
+        
+        _ = viewModel.wallet.asObservable().subscribe { _ in
+            guard let wallet = self.viewModel.wallet.value else {return}
+        
+                self.showAlertForTitle(title: "Balance: \(wallet.balance)\nTotal Received: \(wallet.totalReceived)\nTotal Sent: \(wallet.totalSent)")
+            
+                self.showAlertForTitle(title: self.viewModel.errorMessage.value)
+         
+            }.disposed(by: disposeBag)
         
     }
-    
+
     func showAlertForTitle(title: String) {
         let alert = UIAlertController(title: "BTC", message: title, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))

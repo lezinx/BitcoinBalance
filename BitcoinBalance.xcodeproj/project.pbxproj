@@ -7,26 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15339D6822140A3000A416E4 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15339D6722140A3000A416E4 /* ExtensionString.swift */; };
+		15339D6A22140C7800A416E4 /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15339D6922140C7800A416E4 /* ExtensionData.swift */; };
 		156ACD032211E77700460713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD022211E77700460713 /* AppDelegate.swift */; };
 		156ACD052211E77700460713 /* WalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD042211E77700460713 /* WalletController.swift */; };
 		156ACD0D2211E77900460713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156ACD0B2211E77900460713 /* LaunchScreen.storyboard */; };
-		156ACD1B2211FFE800460713 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD1A2211FFE800460713 /* MainView.swift */; };
 		156ACD1E22121E4000460713 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD1D22121E4000460713 /* WalletModel.swift */; };
 		156ACD21221223BC00460713 /* WalletVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD20221223BC00460713 /* WalletVIewModel.swift */; };
 		156ACD23221282B400460713 /* ValidateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156ACD22221282B400460713 /* ValidateViewModel.swift */; };
+		158637A22214507D0001003F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158637A022144BFF0001003F /* Main.storyboard */; };
 		E6D0E67D7A23B485DE997FC4 /* Pods_BitcoinBalance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C3C6D9115A594A1E7AFC52 /* Pods_BitcoinBalance.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15339D6722140A3000A416E4 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
+		15339D6922140C7800A416E4 /* ExtensionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionData.swift; sourceTree = "<group>"; };
+		15339D6D2214154F00A416E4 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		156ACCFF2211E77700460713 /* BitcoinBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156ACD022211E77700460713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		156ACD042211E77700460713 /* WalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletController.swift; sourceTree = "<group>"; };
 		156ACD0C2211E77900460713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		156ACD0E2211E77900460713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		156ACD1A2211FFE800460713 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		156ACD1D22121E4000460713 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
 		156ACD20221223BC00460713 /* WalletVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVIewModel.swift; sourceTree = "<group>"; };
 		156ACD22221282B400460713 /* ValidateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateViewModel.swift; sourceTree = "<group>"; };
+		158637A022144BFF0001003F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		45BCDDCAA72C9DF00A059F58 /* Pods-BitcoinBalance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBalance.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinBalance/Pods-BitcoinBalance.debug.xcconfig"; sourceTree = "<group>"; };
 		D24CB2B0FCB165725B0ABBED /* Pods-BitcoinBalance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBalance.release.xcconfig"; path = "Target Support Files/Pods-BitcoinBalance/Pods-BitcoinBalance.release.xcconfig"; sourceTree = "<group>"; };
 		F3C3C6D9115A594A1E7AFC52 /* Pods_BitcoinBalance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinBalance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15339D6622140A1700A416E4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15339D6722140A3000A416E4 /* ExtensionString.swift */,
+				15339D6922140C7800A416E4 /* ExtensionData.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		15339D6C2214151000A416E4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				15339D6D2214154F00A416E4 /* BridgingHeader.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		156ACCF62211E77700460713 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +91,8 @@
 				156ACD1C22121DD000460713 /* Model */,
 				156ACD192211EAB000460713 /* Controllers */,
 				156ACD142211E78600460713 /* View */,
+				15339D6622140A1700A416E4 /* Extension */,
+				15339D6C2214151000A416E4 /* SupportingFiles */,
 				156ACD022211E77700460713 /* AppDelegate.swift */,
 				156ACD0B2211E77900460713 /* LaunchScreen.storyboard */,
 				156ACD0E2211E77900460713 /* Info.plist */,
@@ -79,7 +103,7 @@
 		156ACD142211E78600460713 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				156ACD1A2211FFE800460713 /* MainView.swift */,
+				158637A022144BFF0001003F /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				156ACD0D2211E77900460713 /* LaunchScreen.storyboard in Resources */,
+				158637A22214507D0001003F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				156ACD1E22121E4000460713 /* WalletModel.swift in Sources */,
-				156ACD1B2211FFE800460713 /* MainView.swift in Sources */,
 				156ACD052211E77700460713 /* WalletController.swift in Sources */,
+				15339D6A22140C7800A416E4 /* ExtensionData.swift in Sources */,
 				156ACD032211E77700460713 /* AppDelegate.swift in Sources */,
 				156ACD23221282B400460713 /* ValidateViewModel.swift in Sources */,
+				15339D6822140A3000A416E4 /* ExtensionString.swift in Sources */,
 				156ACD21221223BC00460713 /* WalletVIewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +430,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Zinx.BitcoinBalance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BitcoinBalance/SupportingFiles/BridgingHeader.h;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -424,6 +452,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Zinx.BitcoinBalance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BitcoinBalance/SupportingFiles/BridgingHeader.h;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
