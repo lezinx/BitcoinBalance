@@ -47,8 +47,6 @@ class WalletController: UIViewController {
             guard let wallet = self.viewModel.wallet.value else {return}
         
                 self.showAlertForTitle(title: "Balance: \(wallet.balance)\nTotal Received: \(wallet.totalReceived)\nTotal Sent: \(wallet.totalSent)")
-            
-                self.showAlertForTitle(title: self.viewModel.errorMessage.value)
          
             }.disposed(by: disposeBag)
         
