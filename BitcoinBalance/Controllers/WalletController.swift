@@ -41,7 +41,7 @@ class WalletController: UIViewController {
             if self.viewModel.isSuccess.value == false {
                  self.showAlertForTitle(title: self.viewModel.errorMessage.value)
             }
-        }
+        }.disposed(by: disposeBag)
         
         _ = viewModel.wallet.asObservable().subscribe { _ in
             guard let wallet = self.viewModel.wallet.value else {return}

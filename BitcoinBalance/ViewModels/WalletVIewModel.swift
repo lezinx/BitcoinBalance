@@ -85,7 +85,6 @@ class WalletViewModel: ValidateViewModel {
         AF.request("https://blockexplorer.com/api/addr/\(address.value)").responseDecodable { (response: DataResponse<WalletModel>) in
             guard response.result.isSuccess else {
                 print("Error \(response.result.error.debugDescription)")
-               
                 completion(response)
                 return
             }
